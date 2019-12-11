@@ -17,7 +17,7 @@ before_install:
 
 script:
   - docker run rades12340/react-test npm test -- --coverage
-
+language: generic
 deploy:
   provider: script
   script: bash ./deploy.sh
