@@ -17,7 +17,7 @@ before_install: -gem install bundler
 
 script:
   - docker run rades12340/react-test npm test -- --coverage
-language: generic
+language: node_js
 deploy:
   provider: script
   script: bash ./deploy.sh
